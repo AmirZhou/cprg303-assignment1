@@ -1,5 +1,5 @@
 import { Text, View } from "react-native";
-
+// this is the home screen
 export default function Index() {
   return (
     <View
