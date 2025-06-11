@@ -7,9 +7,9 @@ SplashScreen.preventAutoHideAsync();
 
 export default function RootLayout() {
   const [loadedFonts] = useFonts({
-    'SFPro-Regular': require('./assets/fonts/SF-Pro-Display-Regular.otf'),
-    'SFPro-Bold': require('./assets/fonts/SF-Pro-Display-Bold.otf'),
-    'SFPro-Text': require('./assets/fonts/SF-Pro-Text-Regular.otf'),
+    'SF-Pro-Display-Regular': require('../assets/fonts/SF-Pro-Display-Regular.otf'),
+    'SF-Pro-Display-Medium': require('../assets/fonts/SF-Pro-Display-Medium.otf'),
+    'SF-Pro-Display-Semibold': require('../assets/fonts/SF-Pro-Display-Semibold.otf'),
   });
 
   useEffect(() => {
