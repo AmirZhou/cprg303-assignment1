@@ -1,15 +1,13 @@
-import { Text, View } from "react-native";
+import { WelcomeScreen } from '@/components/features/onboarding/WelcomeScreen';
+import { useRouter } from 'expo-router';
+
 // this is the home screen
-export default function Index() {
-  return (
-    <View
-      style={{
-        flex: 1,
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-    >
-      <Text>Edit app/index.tsx to edit this screen.</Text>
-    </View>
-  );
+export default function Welcome() {
+  const router = useRouter();
+
+  const handleContinue = () => {
+    router.push('/data-sharing');
+  };
+
+  return <WelcomeScreen onContinue={handleContinue} />;
 }
