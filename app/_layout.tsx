@@ -10,6 +10,7 @@ export default function RootLayout() {
     'SF-Pro-Display-Regular': require('../assets/fonts/SF-Pro-Display-Regular.otf'),
     'SF-Pro-Display-Medium': require('../assets/fonts/SF-Pro-Display-Medium.otf'),
     'SF-Pro-Display-Semibold': require('../assets/fonts/SF-Pro-Display-Semibold.otf'),
+    'SF-Pro-Display-Bold': require('../assets/fonts/SF-Pro-Display-Bold.otf'),
   });
 
   useEffect(() => {
