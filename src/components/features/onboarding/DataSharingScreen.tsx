@@ -59,7 +59,7 @@ export function DataSharingScreen({
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#000000',
+    backgroundColor: '#1c1c1c',
   },
   content: {
     flex: 1,
@@ -67,7 +67,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 20,
   },
   title: {
-    fontSize: 34,
+    fontSize: 38,
     fontFamily: 'SF-Pro-Display-Semibold',
     color: '#FFFFFF',
     textAlign: 'center',
@@ -78,39 +78,37 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   description: {
-    fontSize: 17,
+    fontSize: 20,
     fontFamily: 'SF-Pro-Display-Regular',
     color: '#FFFFFF',
-    lineHeight: 24,
     marginBottom: 24,
   },
   link: {
     color: '#A7F432',
   },
   sectionTitle: {
-    fontSize: 17,
-    fontFamily: 'SF-Pro-Display-Medium',
+    fontSize: 20,
+    fontFamily: 'SF-Pro-Display-Semibold',
     color: '#FFFFFF',
-    marginBottom: 16,
+    marginBottom: 8,
     marginTop: 8,
   },
   bulletPoint: {
     flexDirection: 'row',
-    alignItems: 'flex-start',
-    marginBottom: 8,
+    alignItems: 'center',
   },
   bullet: {
-    fontSize: 17,
+    fontSize: 34,
     color: '#AAAAAA',
     marginRight: 12,
-    marginTop: 2,
+    marginLeft: 8,
+    marginTop: -8,
   },
   bulletText: {
     flex: 1,
     fontSize: 17,
     fontFamily: 'SF-Pro-Display-Regular',
     color: '#AAAAAA',
-    lineHeight: 24,
   },
   footer: {
     paddingBottom: 34,

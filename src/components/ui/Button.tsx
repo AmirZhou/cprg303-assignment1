@@ -40,29 +40,27 @@ export function Button({
 
 const styles = StyleSheet.create({
   button: {
-    height: 50,
-    borderRadius: 25,
+    height: 56,
+    borderRadius: 14,
     justifyContent: 'center',
     alignItems: 'center',
     marginHorizontal: 20,
   },
   primaryButton: {
-    backgroundColor: '#A7F432',
+    backgroundColor: '#BAFD50',
   },
   secondaryButton: {
     backgroundColor: 'transparent',
-    borderWidth: 1,
-    borderColor: '#A7F432',
   },
   buttonText: {
-    fontSize: 17,
-    fontFamily: 'SF-Pro-Display-Medium',
+    fontSize: 20,
+    fontFamily: 'SF-Pro-Display-Semibold',
   },
   primaryText: {
-    color: '#000000',
+    color: '#000100',
   },
   secondaryText: {
-    color: '#A7F432',
+    color: '#BAFD50',
   },
   disabled: {
     opacity: 0.5,
