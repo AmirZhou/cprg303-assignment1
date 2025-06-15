@@ -3,9 +3,11 @@ import { Stack } from 'expo-router';
 import * as SplashScreen from 'expo-splash-screen';
 import { useEffect } from 'react';
 
+// Prevents the splash screen from auto-hiding before fonts are ready
 SplashScreen.preventAutoHideAsync();
 
 export default function RootLayout() {
+  // Load custom fonts from local assets
   const [loadedFonts] = useFonts({
     'SF-Pro-Display-Regular': require('../assets/fonts/SF-Pro-Display-Regular.otf'),
     'SF-Pro-Display-Medium': require('../assets/fonts/SF-Pro-Display-Medium.otf'),
@@ -26,4 +28,8 @@ export default function RootLayout() {
       <Stack.Screen name="home" />
     </Stack>
   );
+
+  // Joseph Mathew - Edited this layout file for CPRG303 Assignment 1
+
 }
+

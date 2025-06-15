@@ -10,4 +10,7 @@ export default function Welcome() {
   };
 
   return <WelcomeScreen onContinue={handleContinue} />;
+
+  // Joseph Mathew - Edited this index file for CPRG303 Assignment 1
+
 }

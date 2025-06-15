@@ -9,3 +9,9 @@ This is an assignment project for CPRG-303
 ## Developer
 
 Yue Zhou
+Joseph Mathew
+
+### How to run
+1. Clone this repo
+2. Run `npm install`
+3. Run `npx expo start`
