@@ -1,4 +1,5 @@
 import type { WorkoutCollection } from '@/types';
+import { BlurView } from 'expo-blur';
 import { Image } from 'expo-image';
 import React from 'react';
 import {
@@ -34,13 +35,18 @@ const collectionsData: WorkoutCollection[] = [
 export function HomeScreen() {
   return (
     <SafeAreaView style={styles.container}>
-      <View style={styles.header}>
+      <BlurView
+        style={styles.blurHeader}
+        intensity={80}
+        tint="dark"
+      >
         <Text style={styles.fitnessLogo}>🍎Fitness+</Text>
-      </View>
+      </BlurView>
 
       <ScrollView
         style={styles.scrollView}
         showsVerticalScrollIndicator={false}
+        contentContainerStyle={styles.scrollContent}
       >
         {/* Time to Walk Section */}
         <View style={styles.section}>
@@ -128,11 +134,20 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#000000',
   },
-  header: {
+
+  blurHeader: {
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    right: 0,
+    zIndex: 1000,
     paddingHorizontal: 20,
-    paddingTop: 10,
+    paddingTop: 60,
     paddingBottom: 20,
+    borderBottomWidth: 0.33,
+    borderBottomColor: 'rgba(84, 84, 88, 0.6)',
   },
+
   fitnessLogo: {
     fontSize: 17,
     fontFamily: 'SF-Pro-Display-Medium',
@@ -141,6 +156,9 @@ const styles = StyleSheet.create({
   },
   scrollView: {
     flex: 1,
+  },
+  scrollContent: {
+    paddingTop: 100, // Space for the fixed header
   },
   section: {
     marginBottom: 40,

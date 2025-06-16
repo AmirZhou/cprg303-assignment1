@@ -5,10 +5,12 @@ export default function DataSharing() {
   const router = useRouter();
 
   const handleShareData = () => {
+    router.dismissAll();
     router.push('/home');
   };
 
   const handleDontShare = () => {
+    router.dismissAll();
     router.push('/home');
   };
 
@@ -20,5 +22,5 @@ export default function DataSharing() {
   );
 
   // Joseph Mathew - Edited this data-sharing file for CPRG303 Assignment 1
-  
+
 }

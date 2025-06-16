@@ -1,6 +1,7 @@
 import { useFonts } from 'expo-font';
 import { Stack } from 'expo-router';
 import * as SplashScreen from 'expo-splash-screen';
+import { StatusBar } from 'expo-status-bar';
 import { useEffect } from 'react';
 
 // Prevents the splash screen from auto-hiding before fonts are ready
@@ -22,11 +23,14 @@ export default function RootLayout() {
   if (!loadedFonts) return null;
 
   return (
-    <Stack>
-      <Stack.Screen name="index" />
-      <Stack.Screen name="data-sharing" />
-      <Stack.Screen name="home" />
-    </Stack>
+    <>
+      <StatusBar style='light'></StatusBar>
+      <Stack screenOptions={{ headerShown: false, headerStyle: {} }} initialRouteName="index">
+        <Stack.Screen name="index" options={{ headerShown: false }} />
+        <Stack.Screen name="data-sharing" options={{ presentation: 'modal', animation: 'slide_from_bottom', gestureEnabled: true, gestureDirection: 'vertical', headerShown: false }} />
+        <Stack.Screen name="home" options={{ presentation: 'card', animation: 'slide_from_right' }} />
+      </Stack>
+    </>
   );
 
   // Joseph Mathew - Edited this layout file for CPRG303 Assignment 1
