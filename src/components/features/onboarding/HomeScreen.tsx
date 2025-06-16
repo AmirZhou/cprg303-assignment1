@@ -195,18 +195,18 @@ const styles = StyleSheet.create({
   },
   cardTitle: {
     fontSize: 17,
-    fontFamily: 'SF-Pro-Display-Medium',
+    fontFamily: 'SF-Pro-Display-Semibold',
     color: '#A7F432',
     marginBottom: 4,
   },
   cardSubtitle: {
     fontSize: 17,
-    fontFamily: 'SF-Pro-Display-Medium',
+    fontFamily: 'SF-Pro-Display-Semibold',
     color: '#FFFFFF',
     marginBottom: 4,
   },
   cardMeta: {
-    fontSize: 15,
+    fontSize: 12,
     fontFamily: 'SF-Pro-Display-Regular',
     color: '#AAAAAA',
   },
