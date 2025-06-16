@@ -64,13 +64,13 @@ export function HomeScreen() {
                 placeholder={{ blurhash: 'L6PZfSi_.AyE_3t7t7R**0o#DgR4' }}
                 transition={200}
               />
-            </View>
-            <View style={styles.cardContent}>
-              <Text style={styles.cardTitle}>{timeToWalkData.title}</Text>
-              <Text style={styles.cardSubtitle}>{timeToWalkData.subtitle}</Text>
-              <Text style={styles.cardMeta}>
-                {timeToWalkData.duration} • {timeToWalkData.episode}
-              </Text>
+              <View style={styles.cardContent}>
+                <Text style={styles.cardTitle}>{timeToWalkData.title}</Text>
+                <Text style={styles.cardSubtitle}>{timeToWalkData.subtitle}</Text>
+                <Text style={styles.cardMeta}>
+                  {timeToWalkData.duration} • {timeToWalkData.episode}
+                </Text>
+              </View>
             </View>
           </Pressable>
         </View>
@@ -180,13 +180,18 @@ const styles = StyleSheet.create({
     height: 200,
     backgroundColor: '#2C2C2E',
     overflow: 'hidden',
+    position: 'relative',
   },
   workoutImage: {
     width: '100%',
     height: '100%',
   },
   cardContent: {
-    padding: 16,
+    padding: 12,
+    position: 'absolute',
+    bottom: 0,
+    left: 0,
+    right: 0,
   },
   cardTitle: {
     fontSize: 17,
